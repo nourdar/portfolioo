@@ -13,23 +13,50 @@
         <link rel="stylesheet"  href="style/css/semantic.min.css" />
         <!--include main stylesheet-->
         <link rel="stylesheet" href="style/css/main.css" />
+        <!-- include mobile stylesheet -->
+        <link rel="stylesheet" href="style/css/mobile.css" />
     </head>
 
     <body>
-      <!-- start container -->
-    <div class="container parentContainer">
-
       <!-- start navbar -->
-      <div class="ui top fixed inverted menu ">
-        <div class="item">
-          <img src="style/images/icons/desktop-app.svg" alt="brand">
-        </div>
-        <a class="active red item"><i class="fa fa-home">&nbsp</i>Home</a>
+      <div class="ui top fixed inverted  menu  nav-profile">
+        <a class="item" id="nav-toggle" ><i class="fa fa-bars fa-2x"></i></a>
+        <a class="blue item  w90">
+          <div class="ui equal width grid w100">
+            <div class="column">
+              <img src="style/images/icons/wassim.jpg" alt="wassim"/>
+            <span class="name" ><strong>wassim el madfaa</strong></span><br>
+            <span class="description" >GRAPHIC  DESIGNER</span>
+            </div>
+              <div class="column" >
+                <img src="style/images/icons/noureddine.jpg" alt="noureddine" />
+                  <span class="name" ><strong>noureddine gachtou</strong></span><br>
+                  <span class="description" >FULL STACK WEB DEVELOPER</span>
+              </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="ui top fixed inverted  menu myNavbar ">
+        <a id="sidebar-toggle" class="bluegrey item"><i class="fa fa-bars fa-2x"></i></a>
+        <a class="active red item"><i class="fa fa-home fa-2x"></i><span class="nav-link">Home</span></a>
+        <a class="blue item"><i class="fa fa-camera fa-2x"></i><span class="nav-link">Gallery</a>
+        <a class="brown item"><i class="fa fa-info-circle fa-2x"></i><span class="nav-link">About Us</a>
+        <a class="green item"><i class="fa fa-envelope fa-2x"></i><span class="nav-link">Contact Us</a>
       </div>
       <!-- end navbar -->
+
+
+      <!-- start container -->
+    <div class="ui  container  parent-container">
+      <div class="home" id="home" >
+        <h1 class="welcome-typed"></h1>
+      </div>
+      <div class="gallery" id="gallery" ></div>
+      <div class="aboutUs" id="aboutUs" ></div>
+      <div class="contactUs" id="contactUs" ></div>
     </div>
       <!-- end container -->
-
 
         <!--include jQuey library-->
         <script src="style/js/jQuery.js" ></script>
@@ -40,8 +67,14 @@
         <!--include semantic ui development file -->
         <script src="style/js/semanticUiDev.js"></script>
 
+        <!-- include nicescroll plug-in  -->
+        <script src="style/js/nicescroll.js"></script>
+
+        <!-- include typed  plug-in  -->
+        <script src="style/js/typed.js"></script>
+
         <!--include my javascript code -->
         <script src="style/js/main.js"></script>
-    </body>
 
+    </body>
 </html>

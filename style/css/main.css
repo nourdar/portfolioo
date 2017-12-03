@@ -1,3 +1,66 @@
-.parentContainer{
-  margin-top:150px;
+
+/*settings*/
+
+.white {
+  color:white;
+}
+.text-center {
+  text-align: center;
+}
+.w100 {
+  width:100%;
+}
+.pab {
+  position: absolute;
+}
+
+/*end settings*/
+.parent-container {
+  position:relative;
+  margin-top:100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-link {
+  font-weight:bold;
+  font-size:16px;
+  margin-left:15px;
+}
+
+.nav-profile {
+
+}
+.nav-profile a:nth-of-type(2){
+  width: 97%;
+  text-align: center;
+}
+
+
+.nav-profile .item , .myNavbar .item {
+  position:static !important;
+}
+.nav-profile .item span {
+  margin-left:90px;
+}
+.nav-profile .item .name {
+  font-size:18px;
+}
+
+.nav-profile .item .description {
+  font-size:12px;
+  padding-left:5px;
+  text-align: left;
+  color:#425074;
+}
+
+.nav-profile .item img {
+  position: absolute;
+  border-radius: 50%;
+  width:80px;
+  height: 80px;
+  top:10px
+}
+.welcome-typed {
+  display: inline;
 }
